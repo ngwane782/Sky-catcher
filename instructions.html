@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Catcher Instructions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Sky Catcher</h1>
+      <p>Game Instructions</p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Game Goal</h2>
+        <p>
+          Objects fall from the sky and the player must move the bat left and
+          right to catch them before they hit the ground.
+        </p>
+        <p>
+          Each caught object increases the score. Each missed object reduces the
+          player's lives.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>How to Play</h2>
+        <ol>
+          <li>Enter your player name on the launcher page.</li>
+          <li>Select a difficulty level.</li>
+          <li>Select a bat colour.</li>
+          <li>
+            Choose optional features such as double score or random object
+            sizes.
+          </li>
+          <li>Click <strong>Open Game Window</strong>.</li>
+          <li>In the new window, click <strong>Start Game</strong>.</li>
+          <li>
+            <!--Change 2: Code added – updated controls description to include mouse and touch-->
+            Move the bat using any of the following controls:
+            <ul>
+              <li><strong>Left Arrow / Right Arrow</strong> keys on the keyboard</li>
+              <li><strong>Mouse</strong> – move the cursor over the game area</li>
+              <li><strong>Touch</strong> – drag your finger across the game area (mobile)</li>
+            </ul>
+            <!--End Change 2-->
+          </li>
+          <li>
+            Catch as many falling objects as possible before they reach the
+            ground.
+          </li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Difficulty Levels</h2>
+        <ul>
+          <li>
+            <strong>Easy:</strong> wider bat, slower falling speed, slower
+            object spawning
+          </li>
+          <li><strong>Medium:</strong> medium bat width, medium speed</li>
+          <li>
+            <strong>Hard:</strong> narrow bat, faster falling speed, faster
+            spawning
+          </li>
+        </ul>
+      </section>
+
+      <!--Change 3: Code added – new Combo Streak section in instructions-->
+      <section class="card">
+        <h2>Combo Streak</h2>
+        <p>
+          Catch objects consecutively without missing to build a streak.
+          A higher streak multiplies the points you earn:
+        </p>
+        <ul>
+          <li><strong>1–2 in a row:</strong> normal points</li>
+          <li><strong>3–4 in a row 🔥:</strong> 2× point multiplier</li>
+          <li><strong>5+ in a row 🔥🔥:</strong> 3× point multiplier</li>
+        </ul>
+        <p>Missing an object resets your streak to zero.</p>
+      </section>
+      <!--End Change 3-->
+
+      <section class="card">
+        <h2>Buttons in the Game Window</h2>
+        <ul>
+          <li><strong>Start Game</strong> starts a new game</li>
+          <li><strong>Pause / Resume</strong> pauses or resumes the game</li>
+          <li><strong>Save Session</strong> stores the current game state</li>
+          <li><strong>Load Session</strong> restores a saved session</li>
+          <li><strong>Reset Game</strong> clears the current game</li>
+          <li>
+            <strong>Back to Settings</strong> closes the game window and returns
+            to the launcher
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Scoring</h2>
+        <ul>
+          <li>Each caught object adds points</li>
+          <li>
+            If <strong>Double score mode</strong> is enabled, each successful
+            catch awards double points
+          </li>
+          <li>Build a <strong>Combo Streak</strong> for extra multipliers</li>
+          <li>Missing objects reduces lives</li>
+          <li>The game ends when no lives remain</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="button-row">
+          <button type="button" onclick="window.location.href = 'index.html'">
+            Back
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>Sky Catcher Instructions</p>
+    </footer>
+  </body>
+</html>

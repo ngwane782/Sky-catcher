@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Catcher Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-window-wrap">
+      <section class="card">
+        <h1>Sky Catcher</h1>
+
+        <div class="button-row">
+          <button id="startBtn">Start Game</button>
+          <button id="pauseBtn">Pause / Resume</button>
+          <button id="saveBtn">Save Session</button>
+          <button id="loadBtn">Load Session</button>
+          <button id="resetBtn">Reset Game</button>
+          <button id="backBtn">Back to Settings</button>
+        </div>
+
+        <div class="stats-grid game-stats-grid">
+          <div class="stat-box">
+            <span class="label">Player</span><span id="displayPlayer">-</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Score</span><span id="displayScore">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Caught</span><span id="displayCaught">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Missed</span><span id="displayMissed">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Lives</span><span id="displayLives">3</span>
+          </div>
+          <div class="stat-box">
+            <span class="label">Difficulty</span
+            ><span id="displayDifficulty">-</span>
+          </div>
+
+          <!--Change 3: Code added – streak stat box to display combo counter-->
+          <div class="stat-box streak-box">
+            <span class="label">Streak</span><span id="displayStreak">0</span>
+          </div>
+          <!--End Change 3-->
+        </div>
+      </section>
+
+      <section class="card">
+        <div id="gameArea">
+          <div id="bat"></div>
+          <div id="ground"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Messages</h2>
+        <div id="messageArea" class="message-area">
+          Click Start Game when ready.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Game Log</h2>
+        <div id="logArea" class="log-area"></div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
